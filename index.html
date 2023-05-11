@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kredit Hesablama Layihesi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="main_title">Kredit Hesablama Formu</h1>
+    <div class="container">
+        <form action="#">
+            <label for="creditAmount">Almaq istediyiniz kredit meblegini daxil edin:</label> 
+            <input type="text"  id="creditAmount"><br>
+            <label for="creditMonth">Zehmet olmasa ayliq gostericini daxil edin:</label>
+            <select id="creditMonth">
+                <option value="12">12</option>
+                <option value="24">24</option>
+                <option value="36">36</option>
+                <option value="48">48</option>
+                <option value="60">60</option>
+            </select>
+            <input type="button" value="Please calculate" onclick="getCalculate();">
+        </form>
+        <h5 id="result" class="result"></h5>
+    </div>
+</body>
+<script src="app.js"></script>
+</html>
